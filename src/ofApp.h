@@ -2,6 +2,13 @@
 
 #include "ofMain.h"
 #include "ofPolyline.h"
+#include "drawable/IDrawable.h"
+#include "drawable/Circle1.h"
+#include "drawable/CrossLike.h"
+#include "drawable/Circle2.h"
+#include "drawable/Circle3.h"
+#include "drawable/Circle4.h"
+#include "drawable/Circle5.h"
 
 class ofApp : public ofBaseApp{
 
@@ -22,36 +29,10 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
 
+		vector<IDrawable*> drawables;
+
 		ofPolyline line;
 		vector<ofPolyline> lineFromPoints;
 		void makeCircle1(ofPolyline& aLine, int centreX, int centreY, float radius);
-		void makeCircle1StepByStep(ofPolyline& aLine, int centreX, int centreY, float radius);
-		void makeCrossLikeStepByStep(ofPolyline& aLine, int centreX, int centreY, float radius);
-		void makeCircle2StepByStep(ofPolyline& aLine, int centreX, int centreY, float radius);
-		void makeCircle3StepByStep(vector<ofPolyline> aLineFromPoints, int centreX, int centreY,
-			float radius);
-		void makeCircle4StepByStep(ofPolyline& aLine, int centreX, int centreY, float radius);
-		void makeCircle5StepByStep(vector<ofPolyline> aLineFromPoints, int centreX, int centreY,
-			float radius);
 		void makeHeart(ofPolyline& aLine);
-		void addPointToLineFromPoints(vector<ofPolyline> aLineFromPoints, ofVec2f point);
-
-		int drawCounterForCircle1;
-		int drawCounterForCrossLike;
-		
-		int drawCounterForCircle2;
-		float dForCircle2;
-		int yForCircle2;
-
-		int drawCounterForCircle3;
-		float dForCircle3;
-		int yForCircle3;
-
-		int drawCounterForCircle4;
-		float dForCircle4;
-		int yForCircle4;
-
-		int drawCounterForCircle5;
-		float dForCircle5;
-		int yForCircle5;
 };

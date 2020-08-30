@@ -180,11 +180,26 @@
     <PostBuildEvent />
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\drawable\Circle5.cpp" />
+    <ClCompile Include="src\drawable\Circle4.cpp" />
+    <ClCompile Include="src\drawable\Circle3.cpp" />
+    <ClCompile Include="src\drawable\Circle2.cpp" />
+    <ClCompile Include="src\drawable\Circle1.cpp" />
+    <ClCompile Include="src\drawable\CrossLike.cpp" />
+    <ClCompile Include="src\drawable\IDrawable.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\ofApp.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\drawable\Circle5.h" />
+    <ClInclude Include="src\drawable\Circle4.h" />
+    <ClInclude Include="src\drawable\Circle3.h" />
+    <ClInclude Include="src\drawable\Circle2.h" />
+    <ClInclude Include="src\drawable\Circle1.h" />
+    <ClInclude Include="src\drawable\CrossLike.h" />
+    <ClInclude Include="src\drawable\IDrawable.h" />
     <ClInclude Include="src\ofApp.h" />
+    <ClInclude Include="src\IDrawable.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="$(OF_ROOT)\libs\openFrameworksCompiled\project\vs\openframeworksLib.vcxproj">
